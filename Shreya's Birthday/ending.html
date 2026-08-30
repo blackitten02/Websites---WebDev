@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>The End · Shreya's Birthday 🌙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-ending">
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <div id="music" class="music hidden" aria-live="polite">
+    <button id="music-toggle" class="music__toggle" aria-label="Play / pause music">❚❚</button>
+    <div class="music__meta">
+      <span class="music__label">now playing</span>
+      <span id="song-name" class="music__name">—</span>
+    </div>
+    <div id="playlist" class="playlist" hidden>
+      <p class="playlist__title">our little soundtrack 🎧</p>
+      <ul id="playlist-list" class="playlist__list"></ul>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html">Shreya ✨</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="memories.html">Memories</a>
+      <a href="letter.html">Letter</a>
+      <a href="lyrics.html">hehehe</a>
+      <a href="fun.html">Fun</a>
+      <a href="ending.html">Ending</a>
+    </nav>
+  </header>
+
+  <main class="page ending">
+    <div class="ending__montage" aria-hidden="true">
+      <!-- 📸 ending montage photos (slow Ken-Burns zoom) -->
+      <img class="kb kb1" src="images/shreya_15.jpeg" alt="" />
+      <img class="kb kb2" src="images/shreya_16.jpeg" alt="" />
+      <img class="kb kb3" src="images/shreya_17.jpeg" alt="" />
+      <img class="kb kb4" src="images/shreya_02.jpeg" alt="" />
+      <div class="ending__veil"></div>
+    </div>
+
+    <div class="ending__content reveal">
+      <p class="ending__kicker">the end (of this little film)</p>
+      <h2 class="ending__title">Happy Birthday,<br /><span>Shreya</span> ❤️</h2>
+      <p class="ending__line">here's to more memories, more laughter, and more us.</p>
+
+      <div class="credits">
+        <p>made with way too much love</p>
+        <p>for the best friend a person could ask for</p>
+        <p class="credits__sig">— happy birthday, my favorite human 🤍</p>
+      </div>
+
+      <button id="replay" class="replay">↺ watch it again</button>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>hehehe · Shreya's Birthday 🎶</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-lyrics">
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <div id="music" class="music hidden" aria-live="polite">
+    <button id="music-toggle" class="music__toggle" aria-label="Play / pause music">❚❚</button>
+    <div class="music__meta">
+      <span class="music__label">now playing</span>
+      <span id="song-name" class="music__name">—</span>
+    </div>
+    <div id="playlist" class="playlist" hidden>
+      <p class="playlist__title">our little soundtrack 🎧</p>
+      <ul id="playlist-list" class="playlist__list"></ul>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html">Shreya ✨</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="memories.html">Memories</a>
+      <a href="letter.html">Letter</a>
+      <a href="lyrics.html">hehehe</a>
+      <a href="fun.html">Fun</a>
+      <a href="ending.html">Ending</a>
+    </nav>
+  </header>
+
+  <p class="lyrics__hint">scroll slowly 🤍</p>
+
+  <main class="page">
+    <!-- ✏️ EDIT LINES below. Add/remove .lyric blocks freely.        -->
+    <!-- Add  data-bg="images/xxx.jpeg"  to float a photo behind it. -->
+    <article class="lyric" data-bg="images/shreya_18.jpeg">
+      <p class="lyric__text">some people walk into your life and quietly change everything.</p>
+    </article>
+    <article class="lyric">
+      <p class="lyric__text">you are the kind of friend i didn't know i needed.</p>
+    </article>
+    <article class="lyric" data-bg="images/shreya_19.jpeg">
+      <p class="lyric__text">thank you for staying, for laughing, for simply being you.</p>
+    </article>
+    <article class="lyric">
+      <p class="lyric__text">every memory with you feels like a song i never want to end.</p>
+    </article>
+    <article class="lyric" data-bg="images/shreya_20.jpeg">
+      <p class="lyric__text">in another life, i'd find you sooner — just to love you longer.</p>
+    </article>
+    <article class="lyric">
+      <p class="lyric__text">you are the softest, bravest, most ridiculous blessing.</p>
+    </article>
+    <article class="lyric" data-bg="images/shreya_21.jpeg">
+      <p class="lyric__text">happy birthday to my favorite person in every room. 🤍</p>
+    </article>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
