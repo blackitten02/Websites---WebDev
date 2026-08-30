@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Fun · Shreya's Birthday 🫶</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-fun">
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <div id="music" class="music hidden" aria-live="polite">
+    <button id="music-toggle" class="music__toggle" aria-label="Play / pause music">❚❚</button>
+    <div class="music__meta">
+      <span class="music__label">now playing</span>
+      <span id="song-name" class="music__name">—</span>
+    </div>
+    <div id="playlist" class="playlist" hidden>
+      <p class="playlist__title">our little soundtrack 🎧</p>
+      <ul id="playlist-list" class="playlist__list"></ul>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html">Shreya ✨</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="memories.html">Memories</a>
+      <a href="letter.html">Letter</a>
+      <a href="lyrics.html">hehehe</a>
+      <a href="fun.html">Fun</a>
+      <a href="ending.html">Ending</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="section-head reveal">
+      <p class="section-head__kicker">just for fun</p>
+      <h2 class="section-head__title">things i <em>love</em> about you</h2>
+      <p class="section-head__note">tap a card to open it 💭</p>
+    </header>
+
+    <div class="cards">
+      <!-- ✏️ Edit the front/back of each .flip card -->
+      <button class="flip reveal" style="--d:0.05s">
+        <div class="flip__inner">
+          <div class="flip__face flip__front"><span>01</span><p>reasons you're amazing</p></div>
+          <div class="flip__face flip__back"><p>your heart is the kindest place i know. also: your snack recommendations. elite.</p></div>
+        </div>
+      </button>
+      <button class="flip reveal" style="--d:0.1s">
+        <div class="flip__inner">
+          <div class="flip__face flip__front"><span>02</span><p>an inside joke</p></div>
+          <div class="flip__face flip__back"><p>police ko sanitary pad bolke nikale the</p></div>
+        </div>
+      </button>
+      <button class="flip reveal" style="--d:0.15s">
+        <div class="flip__inner">
+          <div class="flip__face flip__front"><span>03</span><p>a promise</p></div>
+          <div class="flip__face flip__back"><p>i promise to be there — for the big days, and the completely pointless 2am ones.</p></div>
+        </div>
+      </button>
+      <button class="flip reveal" style="--d:0.2s">
+        <div class="flip__inner">
+          <div class="flip__face flip__front"><span>04</span><p>our soundtrack</p></div>
+          <div class="flip__face flip__back"><p>every song in that little player reminds me of you. press play and stay a while. 🎧</p></div>
+        </div>
+      </button>
+      <button class="flip reveal" style="--d:0.25s">
+        <div class="flip__inner">
+          <div class="flip__face flip__front"><span>05</span><p>things i love</p></div>
+          <div class="flip__face flip__back"><p>your nonsense. your loyalty. the way you say my name. the way you light up a room.</p></div>
+        </div>
+      </button>
+      <button class="flip reveal" style="--d:0.3s">
+        <div class="flip__inner">
+          <div class="flip__face flip__front"><span>06</span><p>one more thing</p></div>
+          <div class="flip__face flip__back"><p>yaarrr mai, tu, dubeyji and raat wali bakchodiiii&lt;3</p></div>
+        </div>
+      </button>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
